@@ -1,1 +1,28 @@
 /* add your styles here */
+
+  
+.App h1 {    
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+   
+  }
+  
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 2px; 
+    margin-left:10px;
+   
+    
+  }
+  
+  .image-container img {
+    max-width: 98%;
+    max-height: 98%;
+    margin: 8px;
+    
+
+    
+  }
+  
