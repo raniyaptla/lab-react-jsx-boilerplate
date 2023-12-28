@@ -6,6 +6,7 @@ const imageData = ()=>{
     {
       id:1,
       img:elephant
+      
     },
     {
       id:2,
