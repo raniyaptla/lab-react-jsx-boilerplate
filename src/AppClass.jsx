@@ -1,42 +1,20 @@
-import { Component } from "react";
+
 import "./App.css"
-import elephant from "./images/elephant.jpeg";
+import React from 'react';
+import { Component } from "react";
+
 
 export default class AppClass extends Component{
   
-  imageData = ()=>{
-    let data = [
-      {
-        id:1,
-        img:elephant
-      },
-      {
-        id:2,
-        img:elephant
-      },
-      {
-        id:3,
-        img:elephant
-      },
-      {
-        id:4,
-        img:elephant
-      }
-    ]
-    return data;
-  }
-
-  // code here
-
-  render() {
+   render() {
    
-    const images = this.imageData();
+    const imgData = this.props.data;
 
     return (
       <div className="App">
         <h1>Kalvium Gallery-Class Component</h1>
         <div className="image-container">
-          {images.map((image) => (
+          {imgData.map((image) => (
             <img key={image.id} src={image.img} alt="image" />
           ))}
         </div>
